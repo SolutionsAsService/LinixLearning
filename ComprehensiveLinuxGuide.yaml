@@ -1,0 +1,100 @@
+guide:
+  title: "Comprehensive Guide to Popular Linux Distributions"
+  overview:
+    introduction: "Linux distributions (distros) are versions of the open-source Linux operating system that cater to different user needs. This guide covers popular distros like Rocky Linux, Ubuntu, and Debian, detailing their installation processes, pros and cons, and general usage."
+    structure:
+      - "1. Introduction to Linux"
+      - "2. Overview of Popular Linux Distributions"
+      - "3. Detailed Installation Guides"
+      - "4. Pros and Cons of Each Distribution"
+      - "5. Usage Tips and Common Commands"
+  sections:
+    "1":
+      title: "Introduction to Linux"
+      content: "Linux is a free and open-source operating system based on Unix. It is widely used in servers, desktops, and embedded systems. Linux distributions bundle the Linux kernel with various software packages, providing users with a complete operating system."
+    "2":
+      title: "Overview of Popular Linux Distributions"
+      content:
+        Rocky Linux:
+          description: "Rocky Linux is a community enterprise operating system designed to be 100% bug-for-bug compatible with Red Hat Enterprise Linux (RHEL). It was created as a replacement for CentOS after its shift to CentOS Stream."
+          target_users: "Enterprise users, system administrators, developers."
+        Ubuntu:
+          description: "Ubuntu is a user-friendly Linux distribution based on Debian. It is known for its ease of use and large community support."
+          target_users: "General users, beginners, developers."
+        Debian:
+          description: "Debian is one of the oldest and most stable Linux distributions. It is known for its strict adherence to free software principles and extensive package repositories."
+          target_users: "Advanced users, system administrators, developers."
+    "3":
+      title: "Detailed Installation Guides"
+      content:
+        Rocky Linux:
+          preparation: "Ensure your system meets the minimum hardware requirements. Download the latest ISO image from the official Rocky Linux website."
+          installation_steps:
+            - "1. Create a bootable USB drive using tools like Rufus or Etcher."
+            - "2. Boot from the USB drive and select 'Install Rocky Linux'."
+            - "3. Follow the on-screen instructions to partition your disk, set up your user account, and configure system settings."
+            - "4. Complete the installation and reboot your system."
+          post_installation: "Update the system and install essential software packages."
+        Ubuntu:
+          preparation: "Download the latest Ubuntu ISO image from the official Ubuntu website."
+          installation_steps:
+            - "1. Create a bootable USB drive using tools like Rufus or Etcher."
+            - "2. Boot from the USB drive and select 'Install Ubuntu'."
+            - "3. Follow the on-screen instructions to partition your disk, set up your user account, and configure system settings."
+            - "4. Complete the installation and reboot your system."
+          post_installation: "Update the system and install essential software packages."
+        Debian:
+          preparation: "Download the latest Debian ISO image from the official Debian website."
+          installation_steps:
+            - "1. Create a bootable USB drive using tools like Rufus or Etcher."
+            - "2. Boot from the USB drive and select 'Install Debian'."
+            - "3. Follow the on-screen instructions to partition your disk, set up your user account, and configure system settings."
+            - "4. Complete the installation and reboot your system."
+          post_installation: "Update the system and install essential software packages."
+    "4":
+      title: "Pros and Cons of Each Distribution"
+      content:
+        Rocky Linux:
+          pros:
+            - "1. 100% RHEL compatibility."
+            - "2. Strong community support."
+            - "3. Regular updates and security patches."
+          cons:
+            - "1. Fewer beginner-friendly resources."
+            - "2. Targeted mainly at enterprise environments."
+        Ubuntu:
+          pros:
+            - "1. User-friendly and beginner-friendly."
+            - "2. Large community and extensive documentation."
+            - "3. Regular releases and updates."
+          cons:
+            - "1. Can be heavy on system resources."
+            - "2. Some users prefer more control over system components."
+        Debian:
+          pros:
+            - "1. Highly stable and reliable."
+            - "2. Extensive package repository."
+            - "3. Strong adherence to free software principles."
+          cons:
+            - "1. Installation and configuration can be complex for beginners."
+            - "2. Less frequent releases compared to other distributions."
+    "5":
+      title: "Usage Tips and Common Commands"
+      content:
+        General Tips:
+          - "1. Regularly update your system using the package manager."
+          - "2. Use the terminal to manage software and system settings."
+          - "3. Explore the distribution’s community forums and documentation for help."
+        Common Commands:
+          system_update:
+            command: "sudo apt update && sudo apt upgrade"
+            description: "Updates the package lists and installs updates on Debian-based systems like Ubuntu."
+          package_installation:
+            command: "sudo apt install [package_name]"
+            description: "Installs a specified package on Debian-based systems like Ubuntu."
+          system_info:
+            command: "uname -a"
+            description: "Displays detailed information about the system."
+          disk_usage:
+            command: "df -h"
+            description: "Shows the disk usage of the system in a human-readable format."
