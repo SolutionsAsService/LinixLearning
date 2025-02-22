@@ -1,0 +1,152 @@
+/* Import Google Font - Monospace for a terminal look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+/* Reset & Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #1b1b1b;  /* Dark, Linux terminal background */
+  color: #c5c8c6;  /* Light text similar to terminal output */
+  line-height: 1.6;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header & Navigation */
+header {
+  background: #2e2e2e;  /* Dark grey */
+  padding: 15px 30px;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #33cc33;  /* Bright green like terminal text */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: #c5c8c6;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #33cc33;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #4caf50, #2196f3); /* Green to blue gradient like terminal colors */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  color: #33cc33;  /* Bright terminal-style green */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #eaeaea;  /* Soft text for readability */
+}
+
+.event-dates {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #33cc33;
+}
+
+/* Button Styles */
+button {
+  background: #33cc33;
+  border: 2px solid #33cc33;
+  color: #1b1b1b;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, border 0.3s ease;
+  font-family: 'Roboto Mono', monospace;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid #33cc33;
+  color: #33cc33;
+}
+
+/* Section Styles */
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #33cc33;
+}
+
+section p, section ul {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2e2e2e;
+  border-top: 2px solid #1a1a1a;
+  color: #c5c8c6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-content h2 {
+    font-size: 2.5rem;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+}
